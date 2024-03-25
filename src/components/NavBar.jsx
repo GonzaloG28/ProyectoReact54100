@@ -1,16 +1,21 @@
 import "../style.css"
+import { CiShoppingBasket } from "react-icons/ci";
 
 function NavBar() {
   return (
     <div>
         <nav className="navBar">
-            <div><img src="" alt="" /></div>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Sobre nosotros</a></li>
+            <div><a href="#"><img src="" alt="" />logo</a></div>
+            <ul className="navLinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
+            <div className ="carrito">
+        <a href="#"><CiShoppingBasket  size={50}/></a>
+            <span className="badge">2</span>
+        </div>
+
         </nav>
     </div>
   )
