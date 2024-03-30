@@ -1,6 +1,5 @@
-import React from "react";
-import "../css/style.css";
-import "../css/navBar.css";
+import "./navBar.css";
+import Logo from '../../assets/Logo.png'
 import { CiShoppingBasket } from "react-icons/ci";
 
 function NavBar() {
@@ -9,7 +8,7 @@ function NavBar() {
         <nav className="navbar navbar-expand-lg nav">
           <div className="container-fluid navBar">
 
-            <a className="navbar-brand" href="#"><img src="" alt="LOGO" /></a>
+            <a className="navbar-brand" href="#"><img src={Logo} alt="LOGO" /></a>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -24,8 +23,8 @@ function NavBar() {
                 <a className="nav-link link" href="#">CONTACT</a>
 
                 <div className ="cartWidget">
-                  <a href="#"> <CiShoppingBasket  size={50}/> </a>
-                  <span className="badge">2</span>
+                  <a href="#"> <CiShoppingBasket  size={50} color="#212121"/> </a>
+                  <span className="badge">0</span>
                 </div>
 
               </div>

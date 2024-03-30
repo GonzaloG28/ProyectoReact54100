@@ -1,5 +1,6 @@
-import NavBar from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import "./style.css"
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
       <NavBar/>
-      <ItemListContainer/>
+      <ItemListContainer title={"¡Bienvenido a Aroma Oasis!"}/>
     </>
   )
 }
