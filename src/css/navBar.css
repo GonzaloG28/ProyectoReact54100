@@ -1,0 +1,52 @@
+
+.nav{
+    .navBar{
+        width: 80%;
+        height: 100px;
+        .navbarLinks{
+            width: 80%;
+            margin: 0 auto;
+                .boxLinks{
+                    display: flex;
+                    justify-content: space-around;
+                    width:100%;
+                        .link{
+                            height: 100%;
+                            padding: 10px;
+                            color:#212121;
+                            border-bottom: #455A64 solid 2px;
+                        }
+                }
+        }
+    }
+}
+
+.badge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red; 
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+   }
+   
+   .cartWidget{
+    position: relative;
+   }
+
+   @media  (max-width: 992px) {
+    .nav{
+        .navBar{
+            width: 80%;
+            height: 100%;
+        }
+    }
+
+    .cartWidget{
+        margin-top: 30px;
+        width: 50px;
+       }
+   }
