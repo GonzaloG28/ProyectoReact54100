@@ -2,6 +2,7 @@ import "./navBar.css";
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/Logo.png'
 import CartWidget from "./CartWidget";
+import Hamburguer from "./Hamburguer";
 
 function NavBar() {
   return (
@@ -12,7 +13,7 @@ function NavBar() {
             <Link className="navbar-brand Logo" to={`/`}><img src={Logo} alt="LOGO" /></Link>
 
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+              <Hamburguer/>
             </button>
 
             <div className="collapse navbar-collapse navbarLinks" id="navbarNavAltMarkup">
@@ -22,12 +23,11 @@ function NavBar() {
                   <Link className="nav-link link hvr-float" to={`/`}>HOME</Link>
                   <Link className="nav-link link hvr-float" to={`/category/men`}>MEN</Link>
                   <Link className="nav-link link hvr-float" to={`/category/women`}>WOMEN</Link>
-                  <Link className="nav-link link hvr-float" to={`/`}>CONTACT</Link>
 
                 </ul>
 
                 <div className ="cartWidget">
-                  <a href="#"> <CartWidget/> </a>
+                  <Link to={`/`}> <CartWidget/> </Link>
                   <span className="badge">0</span>
                 </div>
 

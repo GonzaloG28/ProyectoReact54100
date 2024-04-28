@@ -14,7 +14,7 @@
             margin: 0 auto;
                 .boxLinks{
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
                     width:100%;
                         .link{
                             height: 100%;
@@ -48,7 +48,16 @@
         .navBar{
             width: 80%;
             height: 100%;
+            .Logo{
+                height: 100%;
+                width: 40%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
+    
     }
 
     .cartWidget{

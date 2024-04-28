@@ -1,31 +1,18 @@
-import { useEffect, useState } from "react"
+
 import ItemDetail from "./ItemDetail"
-import infoProducts from "../../InfoProducts/infoProducts"
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
+import { products } from "../../InfoProducts/infoProducts";
 
-function ItemDetailContainer({ product }) {
 
-  const [products, setProducts] = useState([])
+function ItemDetailContainer() {
   const {idProduct} = useParams()
-
-  useEffect(() =>{
-    infoProducts
-    .then((res)=>{
-      if(idProduct){
-        const newProducts = res.filter((prod) => prod.id===idProduct)
-        setProducts(newProducts)
-      } else{
-        setProducts(res)
-      }
-    })
-    .catch(error =>console.error(error))
-  },[idProduct])
+	const prod = products.find(prod => prod.id === parseInt(idProduct))
 
   return (
     <div>
-      <ItemDetail prod={products}/>
+      <ItemDetail producto={prod}/>
     </div>
-  )
+  );
 }
 
 export default ItemDetailContainer

@@ -12,8 +12,8 @@ function App() {
       <NavBar/>
 
       <Routes>
-        <Route path='/' element={<ItemListContainer title={"¡Bienvenido a Aroma Oasis!"}/>}/>
-        <Route path='/category/:idCategory' element={<ItemListContainer title={"¡Bienvenido a Aroma Oasis!"}/>}/>
+        <Route path='/' element={<ItemListContainer title={"¡Welcome to Aroma Oasis!"}/>}/>
+        <Route path='/category/:idCategory' element={<ItemListContainer title={"¡Welcome to Aroma Oasis!"}/>}/>
         <Route path='/item/:idProduct' element={<ItemDetailContainer/>}/>
         
 

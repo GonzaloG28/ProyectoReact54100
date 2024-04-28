@@ -1,83 +1,83 @@
-const products = [
+export const products = [
     {
-        id: "1",
+        id: 1,
         name:"Perfume Armaf Club De Nuit Intense Edt 105",
-        description:"Intenso Este perfume combina notas cítricas, afrutadas, cuero, ahumadas, amaderadas, aromáticas, dulces y almizcladas para crear una experiencia olfativa equilibrada y cautivadora que captura la frescura y energía de los cítricos con un toque intrigante...",
-        price: 67988,
-        stock: 1,
+        description:"Intense This perfume combines citrus, fruity, leather, smoky, woody, aromatic, sweet and musky notes to create a balanced and captivating olfactory experience that captures the freshness and energy of citrus fruits with an intriguing touch...",
+        price: "67.988",
         category: "men",
+        stock: 8,
         image:"https://mundoaromas.cl/cdn/shop/products/club-de-nuit-intense.jpg?v=1646238975"
     },
     {
-        id: "2",
+        id: 2,
         name:"Perfume Armaf Club De Nuit Edp",
-        description:"Este perfume de mujer presenta una combinación armoniosa de notas que crean una fragancia cautivadora.",
-        price: 45200,
-        stock: 1,
+        description:"This women's perfume presents a harmonious combination of notes that create a captivating fragrance.",
+        price: "45.200",
         category: "women",
+        stock:3,
         image:"https://mundoaromas.cl/cdn/shop/products/club-nuit-mujer-armaf.jpg?v=1646239005"
     },
     {
-        id: "3",
+        id: 3,
         name:"Perfume Zara Vibrant Leather Edp",
-        description:"Es una fragancia amaderada aromática para hombres que se lanzó en 2018. Es una fragancia fresca, vibrante y masculina que es perfecta para el uso diario.",
-        price: 69980,
-        stock: 1,
+        description:"It is an aromatic woody fragrance for men that was launched in 2018. It is a fresh, vibrant and masculine fragrance that is perfect for everyday wear.",
+        price: "69.980",
         category: "men",
+        stock:5,
         image:"https://mundoaromas.cl/cdn/shop/products/zaravibrantleathernuevo2023.jpg?v=1677693425"
     },
     {
-        id: "4",
+        id: 4,
         name:"Perfume Cuba La Vida Edp",
-        description:"Perfume Cuba La Vida Edp 100ml Mujer (Aroma Como La Vide Es Belle de Lancome )",
-        price: 13980,
-        stock: 1,
+        description:"Cuba La Vida Perfume Edp 100ml for Women (Aroma Como La Vide Es Belle by Lancome)",
+        price: "13.980",
         category: "women",
+        stock:9,
         image:"https://mundoaromas.cl/cdn/shop/products/cuba-la-vida-edp-100ml.jpg?v=1646239262"
     },
     {
-        id: "5",
+        id: 5,
         name:"Perfume Lattafa Asad Edp",
-        description:"Es una fragancia oriental amaderada que combina notas cítricas y frescas en las notas de salida, un corazón especiado y exótico de especias y oud, y una base cálida y ambarina de maderas y ámbar.",
-        price: 55980,
-        stock: 1,
+        description:"It is an oriental woody fragrance that combines citrus and fresh notes in the top notes, a spicy and exotic heart of spices and oud, and a warm and amber base of woods and amber.",
+        price: "55.980",
         category: "men",
+        stock:7,
         image:"https://mundoaromas.cl/cdn/shop/products/asad.jpg?v=1687455819"
     },
     {
-        id: "6",
+        id: 6,
         name:"Tester Cacharel Amor Amor Edt",
-        description:"Se lanzó en 2003 y fue creada por Laurent Bruyere y Dominique Ropion. Notas de salida: grosellas negras, naranja, mandarina, casia, bergamota. Notas de corazón: rosa, chabacano, jazmín, azucena y lirio de los valles (muguete)",
-        price: 51980,
-        stock: 1,
+        description:"It was launched in 2003 and was created by Laurent Bruyere and Dominique Ropion. Top notes: black currants, orange, mandarin orange, cassia, bergamot. Heart notes: rose, apricot, jasmine, lily and lily of the valley",
+        price: "51.980",
         category: "women",
+        stock:12,
         image:"https://mundoaromas.cl/cdn/shop/products/amor_amor_tester.png?v=1646238173"
     },
     {
-        id: "7",
+        id: 7,
         name:"Perfume Tommy Hilfiger Men Edt",
-        description:"La fragancia se abre con un aroma a menta y bergamota fresco y limpio. La menta le da un toque refrescante, mientras que la bergamota le da un toque cítrico.",
-        price: 47980,
-        stock: 1,
+        description:"The fragrance opens with a fresh and clean mint and bergamot aroma. Mint gives it a refreshing touch, while bergamot gives it a citrus touch.",
+        price: "47.980",
         category: "men",
+        stock:10,
         image:"https://mundoaromas.cl/cdn/shop/products/04_AM82668-02_000_01.jpg?v=1646238122"
     },
     {
-        id: "8",
+        id: 8,
         name:"Perfume Ralph Lauren Big Pony 2 Edt",
-        description:"La fragancia comienza con una explosión de notas afrutadas frescas, como la manzana, la pera, la naranja, la fresa y el melón.",
-        price: 67980,
-        stock: 1,
+        description:"The fragrance begins with a burst of fresh fruity notes, such as apple, pear, orange, strawberry and melon.",
+        price: "67.980",
         category: "women",
+        stock:7,
         image:"https://mundoaromas.cl/cdn/shop/products/perfume-ralph-lauren-big-pony-2-dama-de-100ml.jpg?v=1646237496"
     },
     {
-        id: "9",
+        id: 9,
         name:"Perfume Zara Vibrant Leather Edp",
-        description:"ara Vibrant Leather Edp 120ml Hombre es una fragancia amaderada aromática para hombres que se lanzó en 2018.",
-        price: 51800,
-        stock: 1,
+        description:"ara Vibrant Leather Edp 120ml Men is an aromatic woody fragrance for men that was launched in 2018.",
+        price: "51.800",
         category: "men",
+        stock:2,
         image:"https://mundoaromas.cl/cdn/shop/files/gsc_116409738_1483057_1.jpg?v=1696353391"
     }
 
@@ -86,7 +86,7 @@ const products = [
 const infoProducts = new Promise((resolve, reject)=>{
     setTimeout(()=>{
         resolve(products)
-    }, 4000)
+    }, 3000)
 })
 
 export default infoProducts

@@ -1,0 +1,19 @@
+.prod{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.descProd{
+    display: flex;
+    align-items: center;
+}
+
+.bton{
+    margin: 15px;
+}
+
+.count{
+    text-align: center;
+}
+

@@ -1,4 +1,44 @@
 .title{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.imgCard{
+    height: 60%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article{
+   margin: 20px;
+   width: 30%;
+}
+
+.close{
+    width: 10%;
+}
+
+.price{
+    font-size: larger;
+}
+
+@media  (max-width: 1400px){
+    .article{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-top: 0;
+        width: 40%;
+     }
+}
+
+@media  (max-width: 992px){
+    .article{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        margin-top: 0;
+        width: 85%;
+     }
 }

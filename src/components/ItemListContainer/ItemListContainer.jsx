@@ -1,4 +1,4 @@
-import "./ItemListContainer.css"
+
 import { useEffect, useState } from "react"
 import infoProducts from "../../InfoProducts/infoProducts"
 import ItemList from "./ItemList"
@@ -20,7 +20,6 @@ function ItemListContainer({title}) {
       }
     })
     .catch(error =>console.log(error))
-    .finally(() => console.log("finalizo la promesa"))
   },[idCategory])
 
   return (
