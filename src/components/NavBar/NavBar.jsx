@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom'
 import Logo from '../../assets/Logo.png'
 import CartWidget from "./CartWidget";
 import Hamburguer from "./Hamburguer";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 function NavBar() {
+
+  const {countCart} = useContext(CartContext)
+
   return (
     <div>
         <nav className="navbar navbar-expand-lg nav">
@@ -27,8 +32,8 @@ function NavBar() {
                 </ul>
 
                 <div className ="cartWidget">
-                  <Link to={`/`}> <CartWidget/> </Link>
-                  <span className="badge">0</span>
+                  <Link to={`/cart`}> <CartWidget/> </Link>
+                  <span className="badge">{countCart()}</span>
                 </div>
 
               </div>

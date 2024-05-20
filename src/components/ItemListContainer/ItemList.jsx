@@ -16,7 +16,7 @@ function ItemList({ products }) {
             
             <div className="d-grid mx-auto bton">
 
-            <Link to={`/item/${product.id}`}><button className="btn btn-dark" type="button">Detalles</button></Link>
+            <Link to={`/item/${product.id}`}><button className="btn btn-dark" type="button">Details</button></Link>
 
               </div>
         </article>

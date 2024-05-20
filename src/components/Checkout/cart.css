@@ -1,0 +1,61 @@
+.boxCart{
+    border-top: 2px solid black;
+    padding-top: 30px;
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.cart{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.btnDelete{
+    margin-right: 20px;
+}
+
+.cartEmpty{
+    text-align: center;
+}
+
+.boxProd{
+    width: 70%;
+    height: 500px;
+    overflow-y: auto;
+    .prod{
+        padding: 10px;
+        width: 20rem;
+        margin-left: 3px;
+        margin-bottom: 10px;
+        text-align: left;
+        border-top: 1px solid black;
+        h5{
+            text-align: center;
+        }
+        img{
+            height: 50%;
+        }
+        .cardBody{
+            height: 20%;
+        }
+    }
+}
+
+
+.details{
+    margin: auto;
+    text-align: left;
+    h1{
+        margin-bottom: 50px;
+    }
+}
+
+.boxForm{
+    width: 40%;
+    margin: 0 auto;
+    h1{
+        text-align: center;
+    }
+}

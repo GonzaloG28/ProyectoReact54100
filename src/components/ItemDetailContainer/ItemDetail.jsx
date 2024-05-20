@@ -1,7 +1,26 @@
 import "./ItemDetail.css"
 import { Link } from "react-router-dom"
 import ItemCount from "./ItemCount"
+import AddItemButton from "./AddItemButton"
+import { useState, useContext } from "react"
+import { CartContext } from "../../context/CartContext"
+
+
+
 function ItemDetail({ producto }) {
+
+  const cartContext = useContext(CartContext)
+  const {addCart} = cartContext
+
+  const [count, setCount] = useState(1)
+
+  const increase = () =>{
+      setCount(count < producto.stock ? count + 1 : count)
+  }
+
+  const decrease = () => {
+      setCount(count > 1 ? count - 1 : count)
+  }
 
 
 	return(
@@ -19,8 +38,10 @@ function ItemDetail({ producto }) {
                        <div className="card-body">
                          <h2>{producto.name}</h2>
                          <p>{producto.description}</p>
-                         <p>Price: ${producto.price}</p>
-                        <ItemCount stock={producto.stock} initial={1}/>
+                         <p><strong>Price: </strong>${producto.price}</p>
+                         
+                        <ItemCount stock={producto.stock} count={count} decrease={decrease} increase={increase}/>
+                        <AddItemButton product={producto} onAdd={() => {addCart(producto, count)}} />
                       </div>
                   </div>
             </article>
