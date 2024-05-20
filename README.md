@@ -1,7 +1,7 @@
 
 # Proyecto React Coder
 
-Este proyecto se basa simulando un E-commerse de una perfumeria.
+Este proyecto se basa simulando un E-commerce de una perfumeria.
 
 Todas las partes de la web funcionan, tanto la vista del detalle del producto donde te muestra su descripcion, precio y
 tienes la opcion de agregar al carrito la cantidad que desees dependiendo del stock del producto.
