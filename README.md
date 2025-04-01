@@ -22,7 +22,7 @@ Este proyecto es una simulación de un **E-commerce** para una perfumería, desa
 
 - **Persistencia de Datos**: Los productos y las órdenes se almacenan en **Firestore**:
   - Productos: Guardados en la colección "items".
-  - Órdenes: Almacenadas en la colección "orders".
+  - Ordenes: Almacenadas en la colección "orders".
 
 - **React-Router**: La navegación entre las diferentes secciones de la web está gestionada mediante **react-router**, lo que facilita una experiencia fluida y sin recargas.
 
@@ -42,7 +42,7 @@ Este proyecto es una simulación de un **E-commerce** para una perfumería, desa
 
 ## Visualización del Proyecto
 
-Puedes acceder a la pagina mediante el siguiente link [Aroma Oasis](https://proyecto-react54100.vercel.app/).
+Puedes ver el proyecto en funcionamiento en [Aroma Oasis](https://proyecto-react54100.vercel.app/).
 
 ## Autor
 
